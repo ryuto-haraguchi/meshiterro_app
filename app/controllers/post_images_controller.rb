@@ -20,7 +20,6 @@ class PostImagesController < ApplicationController
       end
       format.json do
         @post_images = PostImage.all
-        render json: @post_images
       end
     end
   end
