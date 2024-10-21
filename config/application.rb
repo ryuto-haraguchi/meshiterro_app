@@ -18,5 +18,10 @@ module Meshiterro
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.after_initialize do
+      Rails.application.routes.default_url_options[:host] = 'http://127.0.0.1:3000/'
+    end
+
   end
 end
+
